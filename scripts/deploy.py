@@ -5,12 +5,11 @@
 #
 # Modification History
 # 04-20-2022 SRK Project Created.
+# 04-22-2022 SRK Documentation Updated.
 
 # -------------------------------- Tasks ----------------------------------- #
 
 # ------------------------------- Resources -------------------------------- #
-from audioop import add
-from tokenize import Token
 from scripts.helpful_scripts import (
     get_account,
     get_contract,
@@ -59,12 +58,15 @@ def deploy_token_farm_and_dapp_token():
 
 def add_allowed_tokens(token_farm, dict_of_allowed_tokens, account):
     """
-    This function
+    This function adds tokens to the Token Farm's allowedTokens list.
 
     Arguments:
+        token_farm - address of the deployed Token Farm contract.
+        dict_of_allowed_tokens - addresses of a token's price feed keyed to the address of that token's contract.
+        account - the account of the user interacting with the Token Farm contact.
 
     Returns:
-
+        token_farm - The object for the TokenFarm contract.
     """
     for token in dict_of_allowed_tokens:
         add_tx = token_farm.addAllowedToken(token.address, {"from": account})
@@ -78,4 +80,7 @@ def add_allowed_tokens(token_farm, dict_of_allowed_tokens, account):
 
 # ----------------------------- Main Function ------------------------------ #
 def main():
+    """
+    This function will be automatically excecuted by brownie when this script is run.
+    """
     deploy_token_farm_and_dapp_token()
