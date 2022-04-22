@@ -25,7 +25,16 @@ KEPT_BALANCE = Web3.toWei(100, "ether")
 
 # ------------------------------ Functions --------------------------------- #
 def deploy_token_farm_and_dapp_token():
-    """This function deploys the TokenFarm and DappToken contracts to the blockchain. It then transfers the entire supply of Dapp Tokens"""
+    """
+    This function deploys the TokenFarm, DappToken and other associated
+    contracts to the blockchain. Dapp tokens are transferred into the Token
+    Farm contract. Dapp, Weth and Fau tokens are added to the list of tokens
+    which can be staked to the Token Farm.
+
+    Returns:
+        token_farm - The Token Farm contract object.
+        dapp_token - The Dapp Token contract object.
+    """
     account = get_account()
     dapp_token = DappToken.deploy({"from": account})
     token_farm = TokenFarm.deploy(
@@ -49,6 +58,14 @@ def deploy_token_farm_and_dapp_token():
 
 
 def add_allowed_tokens(token_farm, dict_of_allowed_tokens, account):
+    """
+    This function
+
+    Arguments:
+
+    Returns:
+
+    """
     for token in dict_of_allowed_tokens:
         add_tx = token_farm.addAllowedToken(token.address, {"from": account})
         add_tx.wait(1)

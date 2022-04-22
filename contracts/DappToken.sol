@@ -2,7 +2,7 @@
 // ------------------------------ Documentation ------------------------------ //
 // Module:  DappToken.sol
 // This smart contract will create 1 million Dapp Tokens and send them to the
-// creator.
+// creator. Used as part of the TokenFarm project.
 //
 //
 // Modification History
