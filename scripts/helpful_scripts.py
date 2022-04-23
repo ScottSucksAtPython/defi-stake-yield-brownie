@@ -42,8 +42,8 @@ contract_to_mock = {
 }
 
 # Variables needed for the Price Feed Aggregator (MockV3Aggregator)
-DECIMALS = 8
-INITIAL_VALUE = 200_000_000_000
+INITIAL_PRICE_FEED_VALUE = 2_000_000_000_000_000_000_000
+DECIMALS = 18
 
 BREED_MAPPING = {0: "Pug", 1: "Shiba_Inu", 2: "St_Bernard"}
 # -------------------------------- Functions ------------------------------- #
@@ -95,7 +95,7 @@ def get_contract(contract_name):
     return contract
 
 
-def deploy_mocks(decimals=DECIMALS, initial_value=INITIAL_VALUE):
+def deploy_mocks(decimals=DECIMALS, initial_value=INITIAL_PRICE_FEED_VALUE):
     account = get_account()
     print(f"The active network is {network.show_active()}.")
     print("Deploying mock contracts:")
