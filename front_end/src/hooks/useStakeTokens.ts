@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { useEthers, useContractFunction } from "@usedapp/core"
 import { constants, utils } from "ethers"
 import TokenFarm from "../chain-info/contracts/TokenFarm.json"
-import ERC20 from "../chain-info/contracts/MockERC20.json"
+import ERC20 from "/Users/scottkostolni/Documents/Projects/Programming Projects/Solidity Projects/defi-stake-yield-brownie/front_end/src/chain-info/contracts/MockERC20.json"
 import { Contract } from "@ethersproject/contracts"
 import networkMapping from "../chain-info/deployments/map.json"
 

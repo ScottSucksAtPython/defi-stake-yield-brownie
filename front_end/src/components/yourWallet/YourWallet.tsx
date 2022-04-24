@@ -34,9 +34,9 @@ export const YourWallet = ({ supportedTokens }: YourWalletProps) => {
     }
     const classes = useStyles()
     return (
-        <Box>
+        <div>
             <h1 className={classes.header}> Your Wallet! </h1>
-            <Box className={classes.box}>
+            <div className={classes.box}>
                 <TabContext value={selectedTokenIndex.toString()}>
                     <TabList onChange={handleChange} aria-label="stake form tabs">
                         {supportedTokens.map((token, index) => {
@@ -58,8 +58,8 @@ export const YourWallet = ({ supportedTokens }: YourWalletProps) => {
                         )
                     })}
                 </TabContext>
-            </Box>
-        </Box >
+            </div>
+        </div >
     )
 
 }
