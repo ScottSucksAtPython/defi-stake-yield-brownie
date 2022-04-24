@@ -12,12 +12,14 @@
   },
   "42": {
     "DappToken": [
+      "0xcf9bA7A23feF56aEEf9b5CeA4A4daE889A2ae63b",
       "0x10ab8FF8cBbA12928676A034E827EeaA49D669db"
     ],
     "MockERC20": [
       "0x0Ad0d8BA39F55Aed5321F51c1f9CDD0DB901b353"
     ],
     "TokenFarm": [
+      "0x03863BA95252dEa417cDB1E5805156f207299Cec",
       "0x52682B41E6805EceAD58907293619289dadF9949"
     ]
   }
