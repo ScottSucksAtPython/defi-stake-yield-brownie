@@ -6,7 +6,7 @@
 # Modification History
 # 04-20-2022 SRK Project Created.
 # 04-22-2022 SRK Documentation Updated.
-# 04-24-2022 SRK Added update_frontend function.
+# 04-24-2022 SRK Added update_frontend functions.
 
 # -------------------------------- Tasks ----------------------------------- #
 

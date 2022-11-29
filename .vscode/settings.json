@@ -3,5 +3,14 @@
     "@chainlink/=/Users/scottkostolni/.brownie/packages/smartcontractkit/chainlink-brownie-contracts@0.4.0",
     "@openzeppelin/=/Users/scottkostolni/.brownie/packages/OpenZeppelin/openzeppelin-contracts@4.5.0"
   ],
-  "solidity.defaultCompiler": "localFile"
+  "solidity.defaultCompiler": "localFile",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "hide-files.files": []
 }
